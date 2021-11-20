@@ -1,0 +1,47 @@
+
+
+body{
+  background-color: #4a5cfe;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.cronometro{  
+  background-color:#353535 ;
+  width: 700px;
+  height: 245px;
+  color: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2rem;
+}
+
+.cronometro h1{
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+.Stopwatch{
+  font-size: 3rem;
+  margin-bottom: 10px;
+ 
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  gap:10px;
+  margin-top: 15px;
+}
+
+.button{
+  height: 25px;
+    border-radius: 1.2rem;
+  outline: none;
+  background-color: turquoise;
+  color: #fff;
+  cursor: pointer;
+}
