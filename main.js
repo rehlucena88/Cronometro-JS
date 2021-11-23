@@ -8,6 +8,7 @@ let timer;
 
 
 
+
 date.setHours(0, 0, 0 ,0);// seta a hora em zero toda vez que vai começar um ciclo
 
  // star do cronometro
@@ -21,9 +22,10 @@ btn[1].addEventListener("click",() => {
 });
 
 // zera o cronometro
-btn[2].addEventListener("click",() => {
-    
-     resetTimer();
+btn[2].addEventListener("click",() => {       
+    clearInterval(timer);
+    time.innerHTML = '00:00:00:000';
+    millis = 0;
 });
 
 
@@ -38,11 +40,4 @@ function showTime() {
     time.innerHTML = `${h}:${m}:${s}:${date.getMilliseconds()}`;
 };
 
-function resetTimer(){
-    timer--;
-    time.textContent = '00:00:00:000';
-    if(timer > 0) {
-        clearInterval(timer);
-        timer = 0;
-    }
-}
+
